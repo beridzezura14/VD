@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-y: hidden !important;
+}
+.main-container{
+    overflow-y: hidden !important;
+    height: 100vh;
+    width: 100%;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.button{
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+    width: 8%;
+    left: 46%;
+    background-color: #ff3333;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 9px 0;
+    border-radius: 30px;
+}
+
+.container{
+    position: relative;
+    width: 500px;
+    animation: 6s rotate ease infinite;
+    transition: 1s;
+    display: none;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(-0.7deg);
+    }
+    
+    25%{
+        transform: rotate(0deg); 
+    }
+    50%{
+        transform: rotate(0.7deg);
+    }
+
+    100%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(-0.7deg); 
+    }
+}
+
+.reset{
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    padding: 20px;
+    display: none;
+}
+.stick{
+    width: 7px;
+    height: 350px;
+    background-color: #3fa583;
+    transform: rotate(200deg);
+    position: relative;
+    left: 290px;
+    bottom: 0;
+    transform: .5s;
+    animation: 3s stick ease;
+    border-radius: 30px;
+    box-shadow: #32325d40 0px 30px 60px -12px inset, #0000004d 0px 18px 36px -18px inset;
+    filter: drop-shadow(0 5px 3px #2b2b2b);
+}
+
+@keyframes stick {
+    from{
+        opacity: 0;
+        height: 0px; 
+        transform: rotate(200deg);
+        left: 230px;
+    }
+    to{
+        opacity: 1;
+        height: 350px; 
+        transform: rotate(200deg);
+        left: 290px;
+    }
+}
+
+.flover{
+    position: absolute;
+    bottom: 280px;
+    left: 70px;
+    z-index: 111;
+    filter: drop-shadow(0 0px 3px blueviolet);
+    animation: 2.4s flover ease;
+}
+@keyframes flover{
+    from{
+        opacity: 0;
+        width: 0;
+        bottom: -80px;
+        left: 250px;
+        transform: rotate(360deg);
+    }
+    to{
+        opacity: 1;
+        width: 128px;
+        left: 70px;
+    }
+}
+.stick2{
+    width: 7px;
+    height: 370px;
+    background-color: #3fa583;
+    transform: rotate(160deg);
+    position: absolute;
+    left: 190px;
+    bottom: 0;
+    animation: 3s stick2 ease;
+    filter: drop-shadow(0 5px 3px #2b2b2b);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.568) 0px 18px 36px -18px inset;
+}
+@keyframes stick2{
+    from{
+        opacity: 0;
+        height: 0px; 
+        transform: rotate(160deg);
+        left: 230px;
+    }
+    to{
+        opacity: 1;
+        height: 350px; 
+        transform: rotate(160deg);
+        left: 193.7px;
+    }
+}
+.flover2{
+    position: absolute;
+    bottom: 280px;
+    right: 76px;
+    z-index: 111;
+    filter: drop-shadow(0 0px 3px blueviolet);
+    transition: .5s;
+    animation: 2.4s flover2 ease;
+}
+@keyframes flover2 {
+    from{
+        opacity: 0;
+        width: 0;
+        right: 300px;
+        bottom: -80px;
+        transform: rotate(360deg);
+    }
+    to{
+        opacity: 1;
+        width: 128px;
+        right: 76px;
+    }
+}
+.stick3{
+    width: 7px;
+    height: 400px;
+    background-color: #3fa583;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 242px;
+    bottom: 0;
+    animation: 3s stick3 ease;
+    filter: drop-shadow(0 5px 3px #2b2b2b);
+}
+
+@keyframes stick3 {
+    from{
+        opacity: 0;
+        height: 0px; 
+        transform: rotate(180deg);
+        
+    }
+    to{
+        opacity: 1;
+        height: 400px; 
+        transform: rotate(180deg);
+    }
+}
+
+.flover3{
+    position: absolute;
+    bottom: 320px;
+    right: 190px;
+    z-index: 111;
+    filter: drop-shadow(0 0px 3px blueviolet);
+    animation: 2.4s flover3 ease;
+}
+@keyframes flover3 {
+    from{
+        opacity: 0;
+        width: 0;
+        bottom: -80px;
+        right: 250px;
+        transform: rotate(360deg);
+    }
+    to{
+        opacity: 1;
+        width: 128px;
+        right: 190px;
+    }
+}
+
+
+
+
+.leaf1{
+    color: #3fa583;
+    position: absolute;
+    bottom: 100px;
+    font-size: 30px;
+    left: 188px;
+    transform: rotate(-20deg);
+    animation: 3s leaf ease;
+}
+.leaf2{
+    bottom: 170px;
+    left: 158px;
+}
+.leaf3{
+    bottom: 230px;
+    left: 138px;
+}
+
+.leaf4{
+    bottom: 280px;
+    left: 160px;
+    transform: scaleX(-1);
+}
+.leaf5{
+    bottom: 210px;
+    left: 185px;
+    transform: scaleX(-1);
+}
+.leaf6{
+    bottom: 140px;
+    left: 208px;
+    transform: scaleX(-1);
+
+}
+
+
+.leaf10{
+    color: #3fa583;
+    position: absolute;
+    bottom: 180px;
+    font-size: 30px;
+    left: 213px;
+    transform: rotate(0deg);
+    animation: 3s leaf ease;
+}
+
+.leaf12{
+    color: #3fa583;
+    position: absolute;
+    bottom: 255px;
+    font-size: 30px;
+    left: 212px;
+    transform: rotate(0deg);
+}
+.leaf13{
+    color: #3fa583;
+    position: absolute;
+    bottom: 225px;
+    font-size: 32px;
+    left: 247px;
+    transform: scaleX(-1);
+    
+}
+
+.leaf14{
+    color: #3fa583;
+    position: absolute;
+    bottom: 295px;
+    font-size: 30px;
+    left: 248px;
+    transform: scaleX(-1);
+}
+
+
+
+.leaf11{
+    color: #3fa583;
+    position: absolute;
+    bottom: 130px;
+    font-size: 30px;
+    right: 222px;
+    transform: rotate(0deg);
+    animation: 3s leaf ease;
+}
+.leaf22{
+    color: #3fa583;
+    position: absolute;
+    bottom: 198px;
+    font-size: 30px;
+    right: 199px;
+    transform: rotate(0deg);
+}
+.leaf23{
+    color: #3fa583;
+    position: absolute;
+    bottom: 260px;
+    font-size: 30px;
+    right: 176px;
+    transform: rotate(0deg);
+}
+.leaf24{
+    color: #3fa583;
+    position: absolute;
+    bottom: 80px;
+    font-size: 30px;
+    right: 207px;
+    transform: scaleX(-1);
+}
+.leaf25{
+    color: #3fa583;
+    position: absolute;
+    bottom: 155px;
+    font-size: 30px;
+    right: 179px;
+    transform: scaleX(-1);
+}
+.leaf26{
+    color: #3fa583;
+    position: absolute;
+    bottom: 220px;
+    font-size: 30px;
+    right: 155px;
+    transform: scaleX(-1);
+}
+
+
+@keyframes leaf{
+    from{
+        opacity: 0;
+        font-size: 0;
+    }
+    to{
+        opacity: 1;
+        font-size: 30px;
+    }
+    
+}
+/* .transform: scaleX(-1); */
+
+.gress1{
+    position: absolute;
+    width: 150px;
+    bottom: 10px;
+    z-index: 11;
+    left: 190px;
+    transform: rotate(10deg);
+    filter: drop-shadow(0 0 2px #2b2b2b);
+    animation: 3s gress1 ease-in-out;
+}
+@keyframes gress1{
+    from{
+        left: 240px;
+        width: 0px;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        width: 150px;
+        left: 190px;
+    }
+}
+.gress2{
+    position: absolute;
+    width: 300px;
+    bottom: 30px;
+    left: 100px;
+    transform: rotate(25deg);
+    z-index: -1111;
+    animation: 3s gress ease-in-out;
+    filter: drop-shadow(0 0 5px  #3fa583);
+}
+
+@keyframes gress{
+    from{
+        left: 240px;
+        width: 0px;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        width: 300px;
+        left: 100px;
+    }
+}
+
+
+
+
+.object{
+    z-index: 111111;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: rgb(238, 238, 69);
+    width: 5px;
+    height: 5px;
+    filter: drop-shadow(0 0 100px  yellow);
+    animation: 17s object1 ease-in infinite;
+}
+.object1{
+    left: 50px;
+    animation: 25s object1 ease-in infinite;
+}
+
+.object2{
+    left: 100px;
+    animation: 15s object1 ease-in infinite;
+}
+.object22{
+    left: 150px;
+    animation: 23s object1 ease-in infinite;
+}
+.object3{
+    left: 200px;
+    animation: 13s object1 ease-in infinite;
+}
+.object33{
+    left: 250px;
+    animation: 28s object1 ease-in infinite;
+}
+.object4{
+    left: 300px;
+    animation: 18s object1 ease-in infinite;
+}
+.object44{
+    left: 350px;
+    animation: 15s object1 ease-in infinite;
+}
+.object5{
+    left: 400px;
+    animation: 19s object1 ease-in infinite;
+}
+.object55{
+    left: 450px;
+    animation: 25s object1 ease-in infinite;
+}
+.object6{
+    right: 0px;
+    animation: 13s object1 ease-in infinite;
+}
+@keyframes object1{
+    from{
+        bottom: 10px;
+    }
+    to{
+        bottom: 500px;
+    }
+}
+
+.butterfly{
+    width: 50px;
+    position: absolute;
+    bottom: 370px;
+    left: 30px;
+    animation: 10s butterfly1 ease-in;
+}
+@keyframes butterfly1{
+    from{
+        opacity: 0;
+        left: -200px;
+        bottom: 200px;
+    }
+    to{
+        opacity: 1;
+        left:30px;
+    }
+}
+.butterfly2{
+    width: 50px;
+    position: absolute;
+    bottom: 270px;
+    right: 50px;
+    transform: scaleX(-1);
+    animation: 10s butterfly2 ease-in;
+}
+@keyframes butterfly2{
+    from{
+        opacity: 0;
+        right: -200px;
+        bottom: 200px;
+    }
+    to{
+        opacity: 1;
+        right:50px;
+    }
+}
+.lend{
+    z-index: 111111;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    /* box-shadow: 0 0 10px #3fa583; */
+    background-color: #2b2b2b;
+    border-top-left-radius: 100000%;
+    border-top-right-radius: 100000%;
+    border-top: 10px solid #3fa583;
+    bottom: -5px;
+}
